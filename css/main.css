@@ -1,3 +1,9 @@
+.post-toc .nav .nav-child {
+  display: block;
+}
+.post-toc ol {
+  font-size: 13px;
+}
 :root {
   --body-bg-color: #eee;
   --content-bg-color: #fff;
@@ -1168,7 +1174,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0ae4ff;
+  background: #0aff00;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1315,7 +1321,6 @@ pre .javascript .function {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
   display: none;
