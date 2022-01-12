@@ -6,7 +6,7 @@
   <link href="http://wxm.fit/atom.xml" rel="self"/>
   
   <link href="http://wxm.fit/"/>
-  <updated>2022-01-11T11:48:13.400Z</updated>
+  <updated>2022-01-12T07:54:17.554Z</updated>
   <id>http://wxm.fit/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客搭建背景音乐</title>
+    <link href="http://wxm.fit/posts/85be47d4/"/>
+    <id>http://wxm.fit/posts/85be47d4/</id>
+    <published>2022-01-12T07:38:53.000Z</published>
+    <updated>2022-01-12T07:54:17.554Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、本文内容"><a href="#一、本文内容" class="headerlink" title="一、本文内容"></a>一、本文内容</h2><p>本文主要描述在hexo next主题下搭建全局的背景音乐播放器。</p><h2 id="二、搭建步骤"><a href="#二、搭建步骤" class="headerlink" title="二、搭建步骤"></a>二、搭建步骤</h2><p>搭建过程分为三步：</p><ol><li>获取网易云的外链播放器</li><li>在本地环境配置音乐播放器</li><li>实现全局播放音乐，不会因为页面切换而停止</li></ol><p>第一步、截图如下：</p><p><img src="/posts/85be47d4/7KKPY92$LZKCZLI1Q_%5DGK-1641973473473.png" alt="img"></p><p>在此处生成外链播放器</p><p>第二步、将播放器嵌入到菜单</p><ul><li>找到主题文件：<code>themes\next\layout\_macro\sidebar.swig</code>找到<code>sidebar-inner</code>，复制之前的代码粘贴到<code>&lt;div&gt;</code>标签后</li></ul><p><img src="/posts/85be47d4/ZtRg3pCBJwTEO79-1641973618840.png" alt="img"></p><p>第三步、实现全局播放</p><p>打开<code>themes\next\layout</code>文件夹找到<code>_layout.swig</code>，并复制以下代码到<code>&lt;head&gt;</code>标签后</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line"> <span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p><img src="/posts/85be47d4/PwrdzIm5pqVL4aB-1641973675095.png" alt="img"></p><ul><li>在<code>themes\next\_config.yml</code>中找到<code>pajx</code>，将它设置为<code>true</code>,并保存</li></ul><p><img src="/posts/85be47d4/vYRCA648W5KOweF-1641973696427.png" alt="img"></p><p>到此，博客的背景音乐播放器就搭建完成了。</p><h2 id="学习总结"><a href="#学习总结" class="headerlink" title="学习总结"></a>学习总结</h2><p>通过这几天对于博客的不断配置，我从刚一开始的充满激情，到现在激情燃尽。这条配置之路充满了坎坷。</p><p>但令人惊喜的是，我发现了博客的配置其实大多数用到的无非是js、css、python、html等语言的不断嵌套。</p><p>在配置这条路上，我对于自己的建议就是尽可能地掌握好基础知识。</p><p>在不断学习网上的配置教程的过程中，我发现大部分的教程都是处于一个缺胳膊短腿的情况。</p><p>只有牢牢地掌握了基础的配置知识，才能在万花丛中尽快的找到最鲜艳的那一朵。</p><p>参考链接：<a href="https://blog.csdn.net/qq_39800978/article/details/109407258">Hexo博客设置背景音乐</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、本文内容&quot;&gt;&lt;a href=&quot;#一、本文内容&quot; class=&quot;headerlink&quot; title=&quot;一、本文内容&quot;&gt;&lt;/a&gt;一、本文内容&lt;/h2&gt;&lt;p&gt;本文主要描述在hexo next主题下搭建全局的背景音乐播放器。&lt;/p&gt;
+&lt;h2 id=&quot;二、搭建步骤&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="博客搭建" scheme="http://wxm.fit/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客搭建相册</title>
